@@ -1,0 +1,43 @@
+.TopNavigationContainer {
+  width: 100vw;
+  background-color: #353535;
+  display: flex;
+  justify-items: center;
+
+  .contentDiv {
+    width: 1140px;
+    margin: auto;
+    .ml-auto {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      justify-content: space-around;
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .LogoContainer {
+      width: 257px;
+
+      .logoItems {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+
+        .logoItemOne {
+          width: 64px;
+        }
+        .logoItemTwo {
+          width: 129px;
+          height: 28px;
+          margin-bottom: 10px;
+          padding: 3px 15px;
+          align-self: end;
+          border-right: 2px solid lightgray;
+        }
+      }
+    }
+  }
+}
+

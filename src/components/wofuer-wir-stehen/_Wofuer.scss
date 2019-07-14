@@ -1,0 +1,128 @@
+.WofuerContainer {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1300px;
+  h3 {
+    color: #2770B8;
+  }
+  .containerContent {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .containerContentItem {
+      max-width: 350px;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        margin: 30px auto;
+        width: 100%;
+        max-width: 350px;
+        height: 100%;
+        max-height: 180px;
+      }
+      h4 {
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+  .VansInZahlenContainer {
+    width: 100%;
+    margin-bottom: 100px;
+    h3 {
+      margin-top: 50px;
+      color: #2770B8
+    }
+
+    .VansInZahlenContentContainer {
+      margin-top: 40px;
+      background: #353535;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      h1 {
+        margin-top: 35px;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 44px;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  .textDiv {
+    width: 100%;
+    max-width: 1140px;
+    text-align: center;
+    margin-bottom: 80px;
+    h3 {
+      width: 100%;
+      color: #353535;
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 24.5%;
+        margin: 0 .5em 0 -55%;
+        vertical-align: middle;
+        border-bottom: 1px solid;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24.5%;
+        margin: 0 -55% 0 .5em;
+        vertical-align: middle;
+        border-bottom: 1px solid;
+      }
+    }
+  }
+  .EngagementContentContainer {
+    width: 100%;
+    margin-bottom: 100px;
+    h3 {
+      color: #2770B8
+    }
+    .EngagementContentItems {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      img {
+        width: 450px;
+        height: 300px;
+        float: right;
+        margin-right: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .FrameworkContentContainer {
+    width: 100%;
+    margin-bottom: 100px;
+    h3 {
+      color: #2770B8
+    }
+    .FrameworkContentItems {
+      h2 {
+        text-align: center;
+        color: grey;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 450px;
+        height: 250px;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

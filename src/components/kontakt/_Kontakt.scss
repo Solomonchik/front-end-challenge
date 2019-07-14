@@ -1,0 +1,43 @@
+.containerKontakt {
+  background: #353535;
+  text-align: center;
+  padding: 30px 0 15px 0;
+
+  height: 130px;
+  hr {
+    max-width: 1110px;
+  }
+  .textAndButtonDiv {
+    width: 170px;
+    height: 90px;
+    margin: -40px auto;
+    position: relative;
+    background: #353535;
+    h1 {
+      color: white;
+      font-weight: lighter;
+      //&:before{
+      //  content: "";
+      //  display: inline-block;
+      //  width: 25.5%;
+      //  margin: 0 .5em 0 -55%;
+      //  vertical-align: middle;
+      //  border-bottom: 1px solid;
+      //}
+      //&:after {
+      //  content: "";
+      //  display: inline-block;
+      //  width: 25.5%;
+      //  margin: 0 -55% 0 .5em;
+      //  vertical-align: middle;
+      //  border-bottom: 1px solid;
+      //}
+    }
+    button {
+      height: 30px;
+      background: rgba(0,0,0,0);
+      color: #ffffff;
+      font-size: 11.6px;
+    }
+  }
+}

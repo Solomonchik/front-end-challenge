@@ -1,0 +1,131 @@
+.Interesse {
+  width: 100%;
+  max-width: 1140px;
+
+  h3 {
+    margin-top: 50px;
+    color: #2770B8
+  }
+
+  .InteresseContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .InteresseContentItemOne {
+      width: 350px;
+      height: 350px;
+      background: url("../image/modeluebersicht.jpg") center no-repeat;
+      background-size: cover;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h3 {
+        color: white;
+        margin-bottom: 50px;
+      }
+      .ItemOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          color: white;
+          width: 100%;
+          max-width: 350px;
+          padding: 20px;
+          position: relative;
+          background: rgba(0,0,0, .3);
+          margin: 0;
+        }
+        div {
+          width: 100%;
+          max-width: 350px;
+          position: relative;
+          background: #353535;
+          padding: 10px;
+          a {
+          }
+        }
+      }
+    }
+    .InteresseContentItemTwo {
+      width: 350px;
+      height: 350px;
+      background: url("../image/service.jpg") center no-repeat;
+      background-size: cover;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h3 {
+        color: white;
+        margin-bottom: 50px;
+      }
+      .ItemTwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          color: white;
+          width: 100%;
+          max-width: 350px;
+          padding: 20px;
+          position: relative;
+          background: rgba(0,0,0, .3);
+          margin: 0;
+        }
+        div {
+          width: 100%;
+          max-width: 350px;
+          position: relative;
+          background: #353535;
+          padding: 10px;
+          a {
+          }
+        }
+      }
+    }
+    .InteresseContentItemThree {
+      width: 350px;
+      height: 350px;
+      background: url("../image/leasing.jpg") center no-repeat;
+      background-size: contain;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h3 {
+        color: white;
+        margin-bottom: 50px;
+      }
+      .ItemThree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          color: white;
+          width: 100%;
+          max-width: 350px;
+          padding: 20px;
+          position: relative;
+          background: rgba(0,0,0, .3);
+          margin: 0;
+        }
+        div {
+          width: 100%;
+          max-width: 350px;
+          position: relative;
+          background: #353535;
+          padding: 10px;
+          a {
+          }
+        }
+      }
+    }
+  }
+}
