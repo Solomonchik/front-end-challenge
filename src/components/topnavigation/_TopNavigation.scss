@@ -1,21 +1,43 @@
-.TopNavigationContainer {
-  width: 100vw;
-  background-color: #353535;
-  display: flex;
-  justify-items: center;
+@keyframes burgerFadeThirdLine {
+  from {
+    transform: translate(0, 0) rotate(0);
+  }
+  to {
+    transform: translate(-5px, -6px) rotate(45deg);
+  }
+}
+
+@keyframes burgerFadeFirstLine {
+  from {
+    transform: translate(0, 0) rotate(0);
+  }
+  to {
+    transform: translate(-5px, 6px) rotate(-45deg);
+  }
+}
+@keyframes burgerFadeSecondLine {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+
+.container {
+  box-shadow: none;
 
   .contentDiv {
-    width: 1140px;
+    padding: 0;
     margin: auto;
-    .ml-auto {
-      width: 100%;
-      max-width: 800px;
-      display: flex;
-      justify-content: space-around;
-      a {
-        color: #ffffff;
-      }
-    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 
     .LogoContainer {
       width: 257px;
@@ -28,6 +50,7 @@
         .logoItemOne {
           width: 64px;
         }
+
         .logoItemTwo {
           width: 129px;
           height: 28px;
@@ -38,6 +61,214 @@
         }
       }
     }
+
+    .navbar {
+      box-shadow: none;
+      width: 100%;
+      max-width: 1110px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      .collapse.show.navbar-collapse {
+        .navbar-nav {
+          //background: red;
+          margin: auto;
+          width: 100%;
+          max-width: 650px;
+          height: 100%;
+          min-height: 74px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      .collapsing.navbar-collapse {
+        .navbar-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+      }
+
+      .burger {
+        display: none;
+
+        div {
+          width: 38px;
+          height: 3px;
+        }
+      }
+    }
+
+    .languageContainer {
+      max-width: 150px;
+      display: flex;
+
+      button {
+        width: 50px;
+        border: none;
+        background: none;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .container {
+    .contentDiv {
+      .LogoContainer {
+        width: 100%;
+        max-width: 180px;
+
+        .logoItems {
+          width: 100%;
+          max-width: 180px;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+
+          .logoItemOne {
+            width: 50px;
+          }
+
+          .logoItemTwo {
+            width: 124px;
+            height: 28px;
+            margin-bottom: 10px;
+            padding: 3px 15px;
+            align-self: end;
+            border-right: 2px solid lightgray;
+          }
+        }
+      }
+
+      .navbar {
+        .collapse.show.navbar-collapse {
+          .navbar-nav {
+            //background: red;
+            margin: auto;
+            padding: 0 0 10px 0;
+            width: 100%;
+            height: 100%;
+            max-width: 650px;
+            min-height: 74px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .dropdown-menu.show {
+              background: #353535;
+            }
+          }
+        }
+
+        //.navbar-toggler {
+        //  display: none;
+        //}
+        .burger {
+          height: 25px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+
+          div {
+            width: 25px;
+            height: 3px;
+            background: #cbc9c9;
+            border-radius: 2px;
+          }
+        }
+
+        .burger-active {
+          .line1 {
+            transform: translate(-5px, 6px) rotate(-45deg);
+            animation: burgerFadeFirstLine 0.7ms ease-out;
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+          }
+
+          .line2 {
+            animation: burgerFadeSecondLine 0.7ms forwards;
+            transition-delay: 0s;
+            transition-duration: 0.25s;
+
+          }
+
+          .line3 {
+            transform: translate(-5px, -6px) rotate(45deg);
+            animation: burgerFadeThirdLine 0.7ms ease-in;
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .container {
+    .contentDiv {
+      .LogoContainer {
+        width: 100%;
+        max-width: 180px;
+
+        .logoItems {
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+
+          .logoItemOne {
+            width: 50px;
+          }
+
+          .logoItemTwo {
+            width: 124px;
+            height: 28px;
+            margin-bottom: 10px;
+            padding: 3px 15px;
+            align-self: end;
+            border-right: 2px solid lightgray;
+          }
+        }
+      }
+
+      .navbar {
+        .collapse.navbar-collapse {
+          .navbar-nav {
+            //background: red;
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 650px;
+            min-height: 74px;
+            display: flex;
+            justify-content: space-between;
+            .dropdown-menu.show {
+              background: #353535;
+              font-size: 13px;
+              text-align: center;
+            }
+            .nav-item {
+              height: 100%;
+              min-height: 74px;
+              font-size: 13px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
   }
 }
 

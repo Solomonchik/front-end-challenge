@@ -1,26 +1,41 @@
-import React, {Component} from 'react';
-import TopNavigation from './components/topnavigation/TopNavigation'
-import Wofuer from './components/wofuer-wir-stehen/Wofuer'
-import Kontakt from './components/kontakt/Kontakt'
-import Footer from './components/footer/Footer'
-import Interesse from './components/interesse/Interesse'
+import React, { Component } from "react";
+import TopNavigation from "./components/topnavigation/TopNavigation";
+import Wofuer from "./components/wofuer-wir-stehen/Wofuer";
+import Kontakt from "./components/kontakt/Kontakt";
+import SecondKontakt from "./components/kontakt/SecondKontakt";
+import Footer from "./components/footer/Footer";
+import Interesse from "./components/interesse/Interesse";
+import Awards from "./components/awards/Awards";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <TopNavigation/>
+      <div className={'appCont'}>
+        <div id="fake"/>
+        <div className={'TopNavigationContainer'}>
+          <TopNavigation />
+        </div>
         <div className="imgAppComponent">
-          <img src={require('./image/imgAuto.png')} alt=""/>
+          <img src={require("./image/imgAuto.png")} alt="" />
         </div>
-        <div className="container">
-          <Wofuer/>
+        <div className="WofuerContainer">
+          <Wofuer />
         </div>
-        <Kontakt/>
-        <div className="container">
-          <Interesse/>
+        <div className={'KontaktCont'}>
+          <Kontakt />
         </div>
-        <Footer/>
+        <div className={'interesseCont'}>
+          <Interesse />
+        </div>
+        <div className={'awardsCont'}>
+          <Awards />
+        </div>
+        <div className={'secondKontaktCont'}>
+          <SecondKontakt/>
+        </div>
+        <div className={'footerCont'}>
+          <Footer />
+        </div>
       </div>
     );
   }

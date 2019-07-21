@@ -1,38 +1,51 @@
-.WofuerContainer {
-  margin-top: 50px;
-  width: 100%;
-  max-width: 1300px;
-  h3 {
-    color: #2770B8;
-  }
-  .containerContent {
-    width: 100%;
-    max-width: 1300px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .containerContentItem {
-      max-width: 350px;
-      max-height: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      img {
-        margin: 30px auto;
-        width: 100%;
-        max-width: 350px;
-        height: 100%;
-        max-height: 180px;
-      }
-      h4 {
-        margin-bottom: 30px;
-      }
+.container {
+  display: flex;
+  flex-direction: column;
 
+  .WofuerCont {
+    padding-top: 50px;
+    text-align: left;
+
+    h3 {
+      color: #2770B8;
+    }
+
+    .containerContent {
+      width: 100%;
+      max-width: 1300px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .containerContentItem {
+        max-width: 350px;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          margin: 30px auto;
+          width: 100%;
+          max-width: 350px;
+          height: 100%;
+          max-height: 180px;
+        }
+
+        h4 {
+          margin-bottom: 30px;
+        }
+
+      }
     }
   }
+
   .VansInZahlenContainer {
     width: 100%;
+    max-width: 1140px;
     margin-bottom: 100px;
+    text-align: left;
+
     h3 {
       margin-top: 50px;
       color: #2770B8
@@ -44,16 +57,24 @@
       color: #ffffff;
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       text-align: center;
-      h1 {
-        margin-top: 35px;
-        margin-bottom: 0;
-        font-weight: bold;
-        font-size: 44px;
-      }
-      p {
-        font-size: 20px;
-        margin-bottom: 35px;
+
+      .FirstItem, .SecondItem, .ThirdItem {
+        width: 370px;
+        margin: auto;
+
+        h1 {
+          margin-top: 35px;
+          margin-bottom: 0;
+          font-weight: bold;
+          font-size: 44px;
+        }
+
+        p {
+          font-size: 20px;
+          margin-bottom: 35px;
+        }
       }
     }
   }
@@ -63,52 +84,107 @@
     max-width: 1140px;
     text-align: center;
     margin-bottom: 80px;
-    h3 {
-      width: 100%;
-      color: #353535;
-      &:before{
-        content: "";
-        display: inline-block;
-        width: 24.5%;
-        margin: 0 .5em 0 -55%;
-        vertical-align: middle;
-        border-bottom: 1px solid;
-      }
-      &:after {
-        content: "";
-        display: inline-block;
-        width: 24.5%;
-        margin: 0 -55% 0 .5em;
-        vertical-align: middle;
-        border-bottom: 1px solid;
+
+    div {
+      height: 75px;
+      width: 70%;
+      max-width: 600px;
+      margin: -35px auto;
+      background-color: white;
+      z-index: 9999;
+
+      h3 {
+        width: 100%;
+        color: #353535;
+        //&:before{                                   // Es ist ein Beispiel, wie ich horizontale Linie machen koennte.
+        //  content: "";
+        //  display: inline-block;
+        //  width: 50%;
+        //  margin: 0 .5em 0 -55%;
+        //  vertical-align: middle;
+        //  border-bottom: 1px solid;
+        //}
+        //&:after {
+        //  content: "";
+        //  display: inline-block;
+        //  width: 50%;
+        //  margin: 0 -55% 0 .5em;
+        //  vertical-align: middle;
+        //  border-bottom: 1px solid;
+        //}
       }
     }
+
+    hr {
+      background: #353535;
+      z-index: -99;
+    }
   }
+
   .EngagementContentContainer {
     width: 100%;
     margin-bottom: 100px;
+
     h3 {
       color: #2770B8
     }
+
     .EngagementContentItems {
+      width: 100%;
+      max-width: 1140px;
+      vertical-align: top;
+      padding-top: 30px;
       display: flex;
       justify-content: space-between;
-      padding-top: 30px;
+
       img {
-        width: 450px;
-        height: 300px;
-        float: right;
-        margin-right: 30px;
+        max-width: 400px;
+        max-height: 280px;
         margin-bottom: 30px;
+      }
+
+      div {
+        width: 70%;
       }
     }
   }
+
   .FrameworkContentContainer {
     width: 100%;
     margin-bottom: 100px;
-    h3 {
-      color: #2770B8
+
+    .FrameworkTitle {
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        color: #2770B8;
+      }
+
+      .nav-link {
+        width: 50px;
+        padding: 0;
+        margin: 0 20px 0 0;
+        height: 40px;
+        background: none;
+        outline: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        color: #2770b8;
+
+        .fa-chevron-up {
+          width: 50px;
+          height: 40px;
+          color: #2770b8;
+
+          &::before {
+            font-size: 24px;
+          }
+        }
+      }
     }
+
     .FrameworkContentItems {
       h2 {
         text-align: center;
@@ -116,12 +192,101 @@
         margin-top: 30px;
         margin-bottom: 30px;
       }
+
       img {
-        width: 450px;
-        height: 250px;
+        max-width: 450px;
+        max-height: 250px;
         float: left;
         margin-right: 30px;
         margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) and  (orientation: portrait) {
+  .container {
+    .textDiv {
+      width: 100%;
+      max-width: 1140px;
+      text-align: center;
+      margin-bottom: 80px;
+
+      div {
+        width: 70%;
+        max-width: 600px;
+        margin: -102px auto;
+        background-color: white;
+        z-index: 9999;
+
+        h3 {
+          width: 100%;
+          color: #353535;
+        }
+      }
+
+      hr {
+        background: #353535;
+        z-index: -99;
+      }
+    }
+
+    .EngagementContentContainer {
+      width: 100%;
+      margin-bottom: 100px;
+
+      h3 {
+        color: #2770B8
+      }
+
+      .EngagementContentItems {
+        width: 100%;
+        max-width: 1140px;
+        vertical-align: top;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          max-width: 345px;
+          max-height: 280px;
+          margin-bottom: 30px;
+        }
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+
+    .FrameworkContentContainer {
+      .FrameworkTitle {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        .nav-link {
+          text-align: center;
+          align-items: center;
+        }
+      }
+
+      .FrameworkContentItems {
+        h2 {
+          text-align: center;
+          color: grey;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        img {
+          max-width: 345px;
+          max-height: 250px;
+          float: left;
+          margin-right: 30px;
+          margin-bottom: 30px;
+        }
       }
     }
   }

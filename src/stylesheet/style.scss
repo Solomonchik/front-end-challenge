@@ -1,17 +1,29 @@
-@import '../components/topnavigation/_TopNavigation.scss';
-@import '../components/wofuer-wir-stehen/Wofuer';
-@import '../components/kontakt/Kontakt';
-@import '../components/footer/Footer';
-@import '../components/interesse/Interesse';
-@import '../App';
+@import "../components/topnavigation/_TopNavigation.scss";
+@import "../components/wofuer-wir-stehen/Wofuer";
+@import "../components/kontakt/Kontakt";
+@import "../components/kontakt/SecondKontakt";
+@import "../components/footer/Footer";
+@import "../components/interesse/Interesse";
+@import "../components/awards/Awards";
+@import "../App";
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button {
   font-weight: inherit;
   line-height: 1;
 }

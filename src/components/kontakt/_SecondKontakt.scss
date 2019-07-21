@@ -1,0 +1,172 @@
+.container {
+  .SecondKontaktContentItems {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px 20px 50px 20px;
+
+    .SecondKontaktContentItemOne {
+      max-width: 1140px;
+      display: flex;
+      justify-content: right;
+      padding: 0 0 50px 0;
+    }
+
+    button {
+      width: 50px;
+      height: 40px;
+      padding: 0;
+      margin-right: 20px;
+      right: 0;
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .ContentItemButton {
+      width: 50px;
+      height: 40px;
+      padding: 0;
+      margin-right: 20px;
+      right: 0;
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+
+      .fa-chevron-up {
+        color: rgb(76, 76, 76);
+
+        &::before {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .SecondKontaktContentItemTwo {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .firstCont {
+      max-width: 300px;
+      text-align: center;
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        color: rgb(76, 76, 76);
+      }
+
+      hr {
+        width: 100px;
+        margin: 0 auto 10px auto;
+        padding: 0;
+      }
+
+      button {
+        width: 270px;
+        height: 30px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0);
+        font-size: 13px;
+      }
+    }
+
+    .secondCont {
+      width: 370px;
+
+      button {
+        width: 200px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: left;
+        background: none;
+        outline: none;
+        border: none;
+      }
+    }
+
+    .thirdCont {
+      max-width: 300px;
+      height: 160px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: right;
+      align-items: end;
+
+      .nav-link {
+        margin: 0 0 0 20px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    .SecondKontaktContentItems {
+      padding: 20px;
+      .SecondKontaktContentItemOne {
+        padding: 0 0 20px 0;
+      }
+
+      .SecondKontaktContentItemTwo {
+        .firstCont {
+          margin: auto auto 30px;
+        }
+
+        .secondCont {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          button {
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: none;
+            outline: none;
+            border: none;
+
+            h5 {
+              color: #353535;
+            }
+          }
+        }
+
+        .thirdCont {
+          margin: auto;
+          max-width: 300px;
+          height: 100px;
+          padding-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+
+          button {
+            margin: 0 0 0 20px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

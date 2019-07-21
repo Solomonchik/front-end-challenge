@@ -1,10 +1,42 @@
-.imgAppComponent {
-  width: 100vw;
-  img {
-    width: 100%;
-    max-height: 700px;
+.appCont {
+  .TopNavigationContainer {
+    width: 100vw;
+    background-color: #353535;
+    display: flex;
+    justify-items: center;
+  }
+
+  .imgAppComponent {
+    width: 100vw;
+    img {
+      width: 100%;
+      max-height: 700px;
+    }
+  }
+  .WofuerContainer {
+    width: 100vw;
+  }
+  .KontaktCont {
+    width: 100vw;
+    background: #353535;
+  }
+  .awardsCont {
+    background: rgb(236, 234, 234);
+    width: 100vw;
+  }
+
+  .interesseCont {
+    width: 100vw;
+    margin: auto;
+  }
+
+  .secondKontaktCont {
+    width: 100vw;
+    background: #cbc9c9;
+  }
+  .footerCont {
+    width: 100vw;
+    background: #353535;
   }
 }
-.container {
-  width: 100vw;
-}
+
