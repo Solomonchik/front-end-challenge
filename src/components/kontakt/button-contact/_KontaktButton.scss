@@ -1,0 +1,76 @@
+.KontaktButtonDiv {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  button {
+    width: 90px;
+    border: none;
+    background-color: #2770b8;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    i {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .KontaktButtonDiv {
+    position: fixed;
+    right: 0;
+    top: 17%;
+    button {
+      width: 90px;
+      border: none;
+      background-color: #2770b8;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px 10px 20px;
+      i {
+        margin: 0;
+        padding: 0;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .KontaktButtonDiv {
+    position: fixed;
+    right: 0;
+    top: 14%;
+    button {
+      width: 60px;
+      border: none;
+      background-color: #2770b8;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 5px 20px 5px 20px;
+      i {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+      }
+    }
+  }
+}

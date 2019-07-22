@@ -24,3 +24,22 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .container {
+    .footerContent {
+      margin: auto;
+      width: 100%;
+      max-width: 650px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .nav-link {
+        width: 50%;
+        max-width: 250px;
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}

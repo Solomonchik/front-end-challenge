@@ -3,6 +3,7 @@ import TopNavigation from "./components/topnavigation/TopNavigation";
 import Wofuer from "./components/wofuer-wir-stehen/Wofuer";
 import Kontakt from "./components/kontakt/Kontakt";
 import SecondKontakt from "./components/kontakt/SecondKontakt";
+import KontaktButton from "./components/kontakt/button-contact/KontaktButton"
 import Footer from "./components/footer/Footer";
 import Interesse from "./components/interesse/Interesse";
 import Awards from "./components/awards/Awards";
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className={'appCont'}>
         <div id="fake"/>
+        <KontaktButton/>
         <div className={'TopNavigationContainer'}>
           <TopNavigation />
         </div>

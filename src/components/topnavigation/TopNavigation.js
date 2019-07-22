@@ -59,7 +59,7 @@ export default class TopNavigation extends React.Component {
               <div className={'line3'}/>
             </div>
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav navbar>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     Produkte
@@ -70,7 +70,7 @@ export default class TopNavigation extends React.Component {
                     </DropdownItem>
                     <DropdownItem divider/>
                     <DropdownItem>
-                      <NavLink href="#WofuerContainer">Wofür wir stehen</NavLink>
+                      <NavLink href="#WofuerContainer" >Wofür wir stehen</NavLink>
                     </DropdownItem>
                     <DropdownItem divider/>
                     <DropdownItem>
@@ -79,13 +79,13 @@ export default class TopNavigation extends React.Component {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink href="/components/">Dienstleistungen</NavLink>
+                  <NavLink href="/Dienstleistungen">Dienstleistungen</NavLink>
                 </NavItem>
                 <NavItem className={'wofuerLink'}>
                   <NavLink href="/wofuer-wir-stehen">Wofür wir stehen</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/kontakt">Kontakt</NavLink>
+                  <NavLink href=".kontakt">Kontakt</NavLink>
                 </NavItem>
                 <div className={'languageContainer'}>
                   <button>

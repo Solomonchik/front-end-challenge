@@ -89,7 +89,7 @@
       height: 75px;
       width: 70%;
       max-width: 600px;
-      margin: -35px auto;
+      margin: -68px auto;
       background-color: white;
       z-index: 9999;
 
@@ -204,6 +204,121 @@
   }
 }
 
+@media screen and (max-width: 768px){
+  .container {
+    .textDiv {
+      width: 100%;
+      max-width: 1140px;
+      text-align: center;
+      margin-bottom: 80px;
+
+      div {
+        width: 70%;
+        max-width: 600px;
+        margin: -68px auto;
+        background-color: white;
+        z-index: 9999;
+
+        h3 {
+          width: 100%;
+          color: #353535;
+        }
+      }
+
+      hr {
+        background: #353535;
+        z-index: -99;
+      }
+    }
+    .WofuerCont {
+      .containerContent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .containerContentItem {
+          width: 50%;
+          max-width: 330px;
+        }
+      }
+    }
+
+    .EngagementContentContainer {
+      width: 100%;
+      margin-bottom: 50px;
+
+      h3 {
+        color: #2770B8
+      }
+
+      .EngagementContentItems {
+        padding-top: 30px;
+        width: 100%;
+        max-width: 1140px;
+        vertical-align: top;
+        display: flex;
+        justify-content: space-between;
+
+
+
+        div {
+          width: 100%;
+          max-width: 750px;
+          p {
+            width: 100%;
+            max-width: 350px;
+          }
+        }
+        img {
+          width: 100%;
+          max-width: 340px;
+          max-height: 280px;
+          margin-left: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .FrameworkContentContainer {
+      .FrameworkTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        h3 {
+          margin: 0;
+        }
+
+        .nav-link {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          .fa-chevron-up {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      .FrameworkContentItems {
+        h2 {
+          text-align: center;
+          color: grey;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        img {
+          max-width: 345px;
+          max-height: 250px;
+          float: left;
+          margin-right: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 375px) and  (orientation: portrait) {
   .container {
     .textDiv {
@@ -230,6 +345,43 @@
         z-index: -99;
       }
     }
+    .WofuerCont {
+      padding-top: 50px;
+      text-align: left;
+
+      h3 {
+        color: #2770B8;
+      }
+
+      .containerContent {
+        width: 100%;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+
+        .containerContentItem {
+          width: 100%;
+          max-width: 350px;
+          max-height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          img {
+            margin: 30px auto;
+            width: 100%;
+            max-width: 350px;
+            height: 100%;
+            max-height: 180px;
+          }
+
+          h4 {
+            margin-bottom: 30px;
+          }
+
+        }
+      }
+    }
 
     .EngagementContentContainer {
       width: 100%;
@@ -251,7 +403,7 @@
         img {
           max-width: 345px;
           max-height: 280px;
-          margin-bottom: 30px;
+          margin: 0;
         }
 
         div {
@@ -291,3 +443,4 @@
     }
   }
 }
+
